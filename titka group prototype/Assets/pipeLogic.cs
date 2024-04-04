@@ -13,6 +13,8 @@ public class pipeLogic : MonoBehaviour
     public bool hasReset = false;
     public bool conected;
     public bool isResetting = false;
+    private float targetRed;
+    private float targetBlue;
 
 
 

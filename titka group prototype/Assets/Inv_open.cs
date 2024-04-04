@@ -30,6 +30,8 @@ public class Inv_open : MonoBehaviour
         }
     }
 
+    
+
     public void NextPage()
     {
         Debug.Log("Switching page...");

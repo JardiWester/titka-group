@@ -6,6 +6,8 @@ TagManager:
   tags:
   - pipeTrigger
   - pipe
+  - Tree
+  - Ignore
   layers:
   - Default
   - TransparentFX
@@ -13,9 +15,9 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
+  - Tree
+  - World
+  - Ignore
   - 
   - 
   - 

@@ -750,7 +750,7 @@ GameObject:
   - component: {fileID: -3100422580125388664}
   - component: {fileID: 529232897023527841}
   m_Layer: 0
-  m_Name: lPipe
+  m_Name: Lpipe
   m_TagString: pipe
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

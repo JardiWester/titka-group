@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class winGridCode : MonoBehaviour
 {
+    private bool winCheck = false;
     [SerializeField] private List<GameObject> winTriggersInGrid;
     [SerializeField] private bool allAreConnected;
     [SerializeField] private GameObject winIndicator;
@@ -14,6 +15,9 @@ public class winGridCode : MonoBehaviour
         {
             winTriggersInGrid.Add(child.gameObject);
         }
+
+        
+
     }
 
     // Update is called once per frame
@@ -28,6 +32,13 @@ public class winGridCode : MonoBehaviour
                 break; // No need to continue checking if one object has the property false
             }
         }
-        
+
+        if (allAreConnected == true && winCheck == false)
+        {
+            Debug.Log("YOU WIN!!!!!!!!!!!!!!!!");
+            winCheck = true;    
+        }
+
     }
+
 }

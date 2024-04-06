@@ -22,7 +22,9 @@ public class pipeLogic : MonoBehaviour
 
     void Start()
     {
-        
+
+        transform.Rotate(0f, 0f, 90 * Random.Range(1, 4)); 
+
         emptyMaterial = gameObject.GetComponent<MeshRenderer>().material;
         //find all child objects and store them in a list
         foreach (Transform child in transform)

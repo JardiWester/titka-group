@@ -2602,10 +2602,10 @@ MonoBehaviour:
   cam: {fileID: 963194228}
   turnSmoothTime: 0.1
   gravity: -9.8
-  speed: 6
+  speed: 7
   jumpHeight: 3
   groundCheck: {fileID: 132094725}
-  groundDistance: 0.4
+  groundDistance: 0.1
   groundMask:
     serializedVersion: 2
     m_Bits: 0

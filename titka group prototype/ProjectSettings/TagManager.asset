@@ -12,9 +12,12 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - connectionTrigger
   - Water
   - UI
+  - pipes
+  - 
+  - 
   - Tree
   - World
   - Ignore

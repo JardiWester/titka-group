@@ -1,10 +1,11 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Belt : MonoBehaviour
 {
-        private static int _beltID = 0;
+    private static int _beltID = 0;
 
     public Belt beltInSequence;
     public BeltItem beltItem;
@@ -14,6 +15,7 @@ public class Belt : MonoBehaviour
 
     private void Start()
     {
+        _beltManager = FindObjectOfType<BeltManager>();
         beltInSequence = null;
         beltInSequence = FindNextBelt();
         gameObject.name = $"Belt: {_beltID++}";
@@ -24,23 +26,22 @@ public class Belt : MonoBehaviour
         if (beltInSequence == null)
             beltInSequence = FindNextBelt();
 
-        if (beltItem != null && beltItem.item != null )
+        if (beltItem != null && beltItem.item != null)
             StartCoroutine(StartBeltMove());
-
     }
 
     public Vector3 GetItemPosition()
     {
         var padding = 0.3f;
         var position = transform.position;
-        return new Vector3(position.x, position.y +padding, position.z);
+        return new Vector3(position.x, position.y + padding, position.z);
     }
 
     private IEnumerator StartBeltMove()
     {
         isSpaceTaken = true;
 
-        if(beltItem != null && beltInSequence != null && beltInSequence.isSpaceTaken == false)
+        if (beltItem.item != null && beltInSequence != null && beltInSequence.isSpaceTaken == false)
         {
             Vector3 toPosition = beltInSequence.GetItemPosition();
 
@@ -71,7 +72,7 @@ public class Belt : MonoBehaviour
 
         Ray ray = new Ray(currentBeltTransform.position, forward);
 
-        if(Physics.Raycast(ray, out hit, 1f))
+        if (Physics.Raycast(ray, out hit, 1f))
         {
             Belt belt = hit.collider.GetComponent<Belt>();
 
@@ -80,7 +81,5 @@ public class Belt : MonoBehaviour
         }
 
         return null;
-
     }
-
 }

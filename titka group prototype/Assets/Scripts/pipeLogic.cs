@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class pipeLogic : MonoBehaviour
 {
-    [SerializeField] private List<GameObject> connectionTrigers;
+    public List<GameObject> connectionTrigers;
     [SerializeField] private List<Light> connectedLights;
     [SerializeField] private Material flowingMaterial;
     [SerializeField] private bool allHaveBeenReset;

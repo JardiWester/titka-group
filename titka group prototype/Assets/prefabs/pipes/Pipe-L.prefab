@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 4656798731002101111}
   - component: {fileID: 8727829662460783974}
   - component: {fileID: -3100422580125388664}
-  - component: {fileID: 529232897023527841}
   m_Layer: 6
   m_Name: Pipe-L
   m_TagString: pipe
@@ -71,7 +70,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0bb77c0fde45df1418554a1719216cd9, type: 2}
+  - {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -112,8 +111,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2, y: 1, z: 0.9}
-  m_Center: {x: 0.5, y: 0, z: 0}
+  m_Size: {x: 3, y: 3, z: 0.9}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &8727829662460783974
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -918,27 +917,6 @@ MonoBehaviour:
   hasReset: 0
   conected: 0
   isResetting: 0
---- !u!65 &529232897023527841
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5213449872659642415}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 0.9}
-  m_Center: {x: 0, y: -1, z: 0}
 --- !u!1001 &644480733736006024
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1094,6 +1072,10 @@ PrefabInstance:
     - target: {fileID: 4984536998735210626, guid: 909e62b5361986f42915718657561a38, type: 3}
       propertyPath: m_Name
       value: Lcristalthick
+      objectReference: {fileID: 0}
+    - target: {fileID: 4984536998735210626, guid: 909e62b5361986f42915718657561a38, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5649608850833617464, guid: 909e62b5361986f42915718657561a38, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1279,6 +1261,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: pipeLight
       objectReference: {fileID: 0}
+    - target: {fileID: 5343348316044816642, guid: 41d0ccf2ab98f204a91efb50bad9f5ee, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1340,6 +1326,10 @@ PrefabInstance:
     - target: {fileID: 5343348316044816642, guid: 41d0ccf2ab98f204a91efb50bad9f5ee, type: 3}
       propertyPath: m_Name
       value: pipeLight (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5343348316044816642, guid: 41d0ccf2ab98f204a91efb50bad9f5ee, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1480,6 +1470,10 @@ PrefabInstance:
     - target: {fileID: 5343348316044816642, guid: 41d0ccf2ab98f204a91efb50bad9f5ee, type: 3}
       propertyPath: m_Name
       value: pipeLight (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5343348316044816642, guid: 41d0ccf2ab98f204a91efb50bad9f5ee, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -17,6 +17,11 @@ public class Movement : MonoBehaviour
     public float groundDistance = 0.4f;
     public LayerMask groundMask;
 
+void Start()
+{
+    Cursor.visible = false;
+    Cursor.lockState = CursorLockMode.Locked;
+}
 
     // Update is called once per frame
     void Update()

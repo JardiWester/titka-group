@@ -8,36 +8,37 @@ public class winGridCode : MonoBehaviour
     [SerializeField] private List<GameObject> winTriggersInGrid;
     [SerializeField] private bool allAreConnected;
     [SerializeField] private GameObject winIndicator;
-    // Start is called before the first frame update
+
     void Start()
     {
+        //put all the wintriggers in a list
         foreach (Transform child in transform)
         {
             winTriggersInGrid.Add(child.gameObject);
         }
-
-        
-
     }
 
-    // Update is called once per frame
     void Update()
     {
+        //the same as all others, it first set this to true
         allAreConnected = true;
         foreach (GameObject winTrigger in winTriggersInGrid)
         {
+            //it then checks all connected wintriggers
             if (winTrigger.GetComponent<winTriggerCode>().connected == false)
             {
+                //if any of them arent connected, it sets it to false
                 allAreConnected = false;
-                break; // No need to continue checking if one object has the property false
+                break; 
+                //stop checking, it is futile, you've already lost, it's too late
             }
         }
 
         if (allAreConnected == true && winCheck == false)
-        {
-            Debug.Log("YOU WIN!!!!!!!!!!!!!!!!");
-            winCheck = true;    
-        }
+        {   
+            winCheck = true;
+            Debug.Log("YOU WIN!!!!!!!!!!!!!!!!!!!!!");
+        } 
 
     }
 

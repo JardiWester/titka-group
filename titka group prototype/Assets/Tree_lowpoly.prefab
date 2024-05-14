@@ -219,7 +219,7 @@ LODGroup:
   m_AnimateCrossFading: 0
   m_LastLODIsBillboard: 0
   m_LODs:
-  - screenRelativeHeight: 0.15900002
+  - screenRelativeHeight: 0.15320864
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 2177308355739012371}
@@ -229,7 +229,7 @@ LODGroup:
     - renderer: {fileID: 3860398416629728508}
     - renderer: {fileID: 7076525635164869140}
     - renderer: {fileID: 4085498931603830020}
-  - screenRelativeHeight: 0.04353098
+  - screenRelativeHeight: 0.045713905
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 3860398416629728508}
@@ -577,6 +577,7 @@ GameObject:
   - component: {fileID: 746416493064136722}
   - component: {fileID: 2024673430123170406}
   - component: {fileID: 3860398416629728508}
+  - component: {fileID: 5813796653306928313}
   m_Layer: 0
   m_Name: Cylinder
   m_TagString: Untagged
@@ -649,3 +650,24 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &5813796653306928313
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7266650134310075427}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 4.02535, y: 15.587677, z: 3.806858}
+  m_Center: {x: 0.095906496, y: 0.5978277, z: 0.017670937}

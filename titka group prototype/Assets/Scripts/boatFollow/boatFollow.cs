@@ -24,6 +24,7 @@ public class boatFollow : MonoBehaviour
         routeToGo = 0;
         tParam = 0f;
         speedModifier = 0.2f;
+        coroutineAllowed = true;
     }
 
     void Update()

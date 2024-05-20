@@ -8,6 +8,7 @@ public class cameraTransitions : MonoBehaviour
     [SerializeField] private CinemachineFreeLook playerCam;
     [SerializeField] private CinemachineVirtualCamera newCam;
     [SerializeField] private cameraFollow camFollowScript;
+    [SerializeField] private Movement playerMovement;
     void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player"){
@@ -20,8 +21,10 @@ public class cameraTransitions : MonoBehaviour
         if (playerCam.Priority == 0){
             playerCam.Priority = 1;
             newCam.Priority = 0;
+            playerMovement.enabled = true;
             gameObject.SetActive(false);
         }else{
+            playerMovement.enabled = false;
             playerCam.Priority = 0;
             newCam.Priority = 1;
             camFollowScript.coroutineAllowed = true;
